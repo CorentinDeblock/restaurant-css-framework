@@ -1,0 +1,88 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+header img {
+  height: 700px;
+}
+header nav {
+  z-index: 2;
+  justify-content: space-between;
+  background-image: linear-gradient(black, transparent);
+  color: white;
+  padding: 20px 40px;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 20px;
+}
+header ul a {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+}
+header .carousel-caption {
+  background-color: #afafafe1;
+  color: #313131;
+  font-size: 40px;
+}
+header .carousel-title {
+  position: absolute;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  background-color: #000000A1;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+header .carousel-title .title-content {
+  font-size: 24px;
+}
+header .carousel-title .title-caption {
+  text-align: center;
+}
+
+.main-content {
+  padding: 100px;
+  background-color: #616161;
+}
+
+.panel {
+  padding: 10px;
+  background-color: #313131;
+  color: white;
+}
+.panel .panel-top {
+  padding: 20px 10px;
+  display: flex;
+}
+.panel .panel-top p {
+  font-size: 20px;
+}
+.panel .panel-top img {
+  margin-right: 40px;
+  height: 300px;
+  border-radius: 20px;
+  border: 3px solid white;
+  background-color: #919191;
+}
+.panel .panel-content {
+  font-size: 22px;
+  padding: 0px 10px;
+}
+.panel .panel-footer {
+  padding: 0px 10px;
+}
+
+main .card .card-title {
+  text-align: center;
+  font-size: 50.6px;
+}
+main .card .card-text {
+  font-size: 22px;
+}
+
+/*# sourceMappingURL=style.css.map */
