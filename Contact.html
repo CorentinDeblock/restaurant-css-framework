@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Vitrina del Restaurantes - Contact</title>
+</head>
+<body>
+    <header class="position-relative">
+        <nav class="position-absolute d-flex w-100">
+            <h1>Rest'eau</h1>
+            <ul>
+                <li>
+                    <a href="Acceuil.html">Acceuil</a>
+                </li>
+                <li>
+                    <a href="Carte.html">Carte</a>
+                </li>
+                <li>
+                    <a href="Photo.html">Photo</a>
+                </li>
+                <li>
+                    <a href="Restaurants.html">Restaurants</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="frontCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-title">
+                <h1 class="title-caption">Rest'eau</h1>
+                <p class="title-content">
+                    Bienvenue sur Rest'eau, le meilleur restaurant equilibré.
+                </p>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="image/frontImage1.jpg" alt="frontImage1">
+                    <div class="carousel-caption">
+                        <h1>Spécialité italienne</h1>
+                        <p>Spécialité italienne disponible ici a AllForFood</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="image/frontImage2.jpg" alt="frontImage2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="image/frontImage3.jpg" alt="frontImage3">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-contact">
+        <div class="container">
+            <h2>Contactez nous</h2>
+            <form action="" class="form-group">
+                <div class="form-row">
+                    <div class="col-lg-4 col-md-12">
+                        <label for="nom">Nom : </label>
+                        <input name="nom" type="text" class="form-control">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <label for="prenom">Prenom : </label>
+                        <input name="prenom" type="text" class="form-control">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <label for="mail">Addresse e-mail : </label>
+                        <input name="nom" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-content">
+                    <div>
+                        <label for="odm">Objet du message : </label>
+                        <select class="form-control" name="odm" class="" id="">
+                            <option value="error">Erreur sur un restaurant</option>
+                            <option value="add">Ajouter votre restaurant</option>
+                            <option value="enterprise">Proposition d'entreprise</option>
+                            <option value="job">Recherche d'un job</option>
+                        </select>
+                    </div>
+                    <div class="text-area">
+                        <textarea class="form-control" name="message" id="message" rows="10" placeholder="Votre message ici..."></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-default btn-success">
+                            <i class="fas fa-clipboard-check"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
