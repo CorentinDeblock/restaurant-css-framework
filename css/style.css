@@ -6,9 +6,11 @@ header img {
   height: 900px;
 }
 header nav {
-  z-index: 2;
+  position: fixed;
+  top: 0%;
+  z-index: 11;
   justify-content: space-between;
-  background-image: linear-gradient(black, transparent);
+  background-image: linear-gradient(black, black 40%, transparent);
   color: white;
   padding: 20px 40px;
 }
@@ -43,11 +45,6 @@ header .carousel-title .title-content {
 }
 header .carousel-title .title-caption {
   text-align: center;
-}
-
-.main-content {
-  padding: 100px;
-  background-color: #616161;
 }
 
 .main-contact {
@@ -86,40 +83,29 @@ header .carousel-title .title-caption {
   font-size: 24px;
 }
 
-.panel {
-  padding: 10px;
-  background-color: #313131;
-  color: white;
+.acceuil-main .main-content {
+  padding: 60px;
+  background-color: #616161;
 }
-.panel .panel-top {
-  padding: 20px 10px;
-  display: flex;
+.acceuil-main .main-content .row {
+  background-color: white;
 }
-.panel .panel-top p {
-  font-size: 18px;
+.acceuil-main .main-content .row:nth-child(n+2) {
+  margin-top: 40px;
 }
-.panel .panel-top img {
-  margin-right: 40px;
-  height: 250px;
-  width: 45%;
-  border-radius: 20px;
-  border: 3px solid white;
-  background-color: #919191;
+.acceuil-main .main-content .row img {
+  padding: 0px;
+  height: 200px;
 }
-.panel .panel-content {
-  font-size: 22px;
-  padding: 0px 10px;
-}
-.panel .panel-footer {
-  padding: 0px 10px;
-}
-
-.acceuil-main .card .card-title {
+.acceuil-main .main-content .card .card-title {
   text-align: center;
   font-size: 50.6px;
 }
-.acceuil-main .card .card-text {
+.acceuil-main .main-content .card .card-text {
   font-size: 22px;
+}
+.acceuil-main .jumbotron {
+  margin-bottom: 0px;
 }
 
 .info-plat {
@@ -238,7 +224,7 @@ ul {
     font-size: 0.8em;
   }
   header .carousel img {
-    height: 500px;
+    height: 350px;
   }
   header .carousel .carousel-title {
     padding: 10px;
@@ -284,6 +270,22 @@ ul {
   .main-resto aside iframe {
     width: 250px;
     height: 250px;
+  }
+
+  .main-content h1 {
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .main-content p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1750px) {
+  .main-content .panel {
+    text-align: center;
+  }
+  .main-content .panel .panel-top div {
+    margin-top: 40px;
   }
 }
 

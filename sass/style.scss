@@ -9,9 +9,11 @@ header{
         height:900px;
     }
     nav{
-        z-index: 2;
+        position:fixed;
+        top:0%;
+        z-index: 11;
         justify-content: space-between;
-        background-image:linear-gradient(black,transparent);
+        background-image:linear-gradient(black,black 40%,transparent);
         color:white;
         padding:20px 40px;
     }
@@ -48,10 +50,6 @@ header{
         }
     }
 }
-.main-content{
-    padding:100px;
-    background-color:#616161;
-}
 .main-contact{
     background-color:#212121;
     color:white;
@@ -87,43 +85,33 @@ header{
         }
     }
 }
-.panel{
-    padding:10px;
-    background-color:#313131;
-    color:white;
-    .panel-top{
-        padding:20px 10px;
-        display:flex;
-        p{
-            font-size:18px;
-        }
-        img{
-            margin-right:40px;
-            height:250px;
-            width: 45%;
-            border-radius:20px;
-            border: 3px solid white;
-            background-color:#919191;
-        }
-    }
-    .panel-content{
-        font-size:22px;
-        padding:0px 10px;
-    }
-    .panel-footer{
-        padding:0px 10px;
-    }
-}
 .acceuil-main{
-    .card{
-        .card-title{
-            text-align: center;
-            font-size:$font-desc * 2.3;
+    .main-content{
+        padding:60px;
+        background-color:#616161;
+        .row{
+            background-color: white;
+            &:nth-child(n+2){
+                margin-top:40px;
+            }
+            img{
+                padding:0px;
+                height:200px;
+            }
         }
-        .card-text{
-            font-size:$font-desc;
+        .card{
+            .card-title{
+                text-align: center;
+                font-size:$font-desc * 2.3;
+            }
+            .card-text{
+                font-size:$font-desc;
+            }
         }
     }
+            .jumbotron{
+            margin-bottom:0px;
+        }
 }
 .info-plat{
     padding:20px;
@@ -231,6 +219,7 @@ ul{
         margin-top:30px;
     }
 }
+
 @media screen and (max-width:590px){
     header{
         nav{
@@ -243,7 +232,7 @@ ul{
         }
         .carousel{
             img{
-                height:500px;
+                height:350px;
             }
             .carousel-title{
                 padding:10px;
@@ -302,6 +291,28 @@ ul{
                 width:250px;
                 height:250px;
             }
+        }
+    }
+    .main-content{
+        h1{
+            font-size:1.2em;
+            font-weight: bolder;
+        }
+        p{
+            font-size:1.0em;
+        }
+    }
+}
+
+@media screen and (max-width:1750px) {
+    .main-content{
+        .panel{
+            .panel-top{
+                div{
+                    margin-top:40px;
+                }
+            }
+            text-align: center;
         }
     }
 }
