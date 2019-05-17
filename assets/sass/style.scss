@@ -114,6 +114,12 @@ header{
             .card-text{
                 font-size:$font-desc;
             }
+            .card-content{
+                margin-top:40px;
+                p{
+                    margin:auto;
+                }
+            }
         }
         margin-bottom:0px;
     }

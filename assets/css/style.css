@@ -112,6 +112,12 @@ header .carousel-title .title-caption {
 .acceuil-main .jumbotron .card .card-text {
   font-size: 18px;
 }
+.acceuil-main .jumbotron .card .card-content {
+  margin-top: 40px;
+}
+.acceuil-main .jumbotron .card .card-content p {
+  margin: auto;
+}
 
 .info-plat {
   padding: 20px;
