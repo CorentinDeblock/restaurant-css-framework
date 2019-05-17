@@ -102,15 +102,15 @@ header .carousel-title .title-caption {
   padding: 0px;
   height: 200px;
 }
-.acceuil-main .main-content .card .card-title {
-  text-align: center;
-  font-size: 50.6px;
-}
-.acceuil-main .main-content .card .card-text {
-  font-size: 22px;
-}
 .acceuil-main .jumbotron {
   margin-bottom: 0px;
+}
+.acceuil-main .jumbotron .card .card-title {
+  text-align: center;
+  font-size: 41.4px;
+}
+.acceuil-main .jumbotron .card .card-text {
+  font-size: 18px;
 }
 
 .info-plat {
