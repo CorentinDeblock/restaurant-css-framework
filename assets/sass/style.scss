@@ -118,28 +118,26 @@ header{
         }
     }
 }
-footer{
-    .jumbotron{
-        .card{
-            .card-title{
-                text-align: center;
-                font-size:$font-desc * 2.3;
+.jumbotron{
+    .card{
+        .card-title{
+            text-align: center;
+            font-size:$font-desc * 2.3;
+        }
+        .card-text{
+            font-size:$font-desc;
+        }
+        .card-content{
+            margin-top:40px;
+            p{
+                margin:auto;
             }
-            .card-text{
-                font-size:$font-desc;
-            }
-            .card-content{
-                margin-top:40px;
-                p{
-                    margin:auto;
-                }
-                img{
-                    height:100px;
-                }
+            img{
+                height:100px;
             }
         }
-        margin-bottom:0px;
     }
+    margin-bottom:0px;
 }
 .info-plat{
     padding:20px;
@@ -225,7 +223,19 @@ ul{
             text-align: center;
         }
     }
-
+    .google-maps{
+        position:relative;
+        padding-bottom:120%;
+        height:0;
+        overflow: hidden;
+    }
+    .google-maps iframe{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100% !important;
+        height:90% !important;
+    }
     text-align: center;
     aside{
         padding:40px;
@@ -262,6 +272,23 @@ $font-mobile-title-cap:1.8em;
 //carousel cpation
 $font-mobile-caption:0.9em;
 $font-mobile-caption-h2:1.3em;
+@media screen and (max-width:768px){
+    header{
+        h1{
+            font-size:2.0em;
+        }
+        ul{
+            margin:auto;
+        }
+    }
+    .main-resto{
+        .card{
+            img{
+                height:300px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width:576px){
     header{
@@ -278,9 +305,6 @@ $font-mobile-caption-h2:1.3em;
                     height: 30px;
                     margin-left:10px;
                 }
-            }
-            ul{
-                margin:auto;
             }
         }
         .carousel{
@@ -307,23 +331,21 @@ $font-mobile-caption-h2:1.3em;
             display:none;
         }  
     }
-    footer{
-        .jumbotron{
-            .card{
-                .card-content{
-                    img{
-                        width:50%;
-                        margin:auto;
-                    }
-                    text-align: center;
+    .jumbotron{
+        .card{
+            .card-content{
+                img{
+                    width:50%;
+                    margin:auto;
                 }
-                .card-title{
-                    text-align: center;
-                    font-size:$font-desc * 1.7;
-                }
-                .card-text{
-                    text-align: center;
-                }
+                text-align: center;
+            }
+            .card-title{
+                text-align: center;
+                font-size:$font-desc * 1.7;
+            }
+            .card-text{
+                text-align: center;
             }
         }
     }
@@ -334,7 +356,6 @@ $font-mobile-caption-h2:1.3em;
     }
     .main-resto{
         aside{
-            padding:0px 10px;
             .card{
                 img{
                     height:300px;
@@ -346,10 +367,10 @@ $font-mobile-caption-h2:1.3em;
                     ul{
                         li{
                             h4{
-                                font-size:1.4em;
+                                font-size:1.2em;
                             }
                             p{
-                                font-size:1.2em;
+                                
                             }
                         }
                     }
@@ -359,10 +380,6 @@ $font-mobile-caption-h2:1.3em;
                         font-size:1.2em;
                     }
                 }
-            }
-            iframe{
-                width:250px;
-                height:250px;
             }
         }
     }

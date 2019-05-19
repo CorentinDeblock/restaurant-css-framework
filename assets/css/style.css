@@ -110,23 +110,23 @@ header .carousel-title .title-caption {
   height: 200px;
 }
 
-footer .jumbotron {
+.jumbotron {
   margin-bottom: 0px;
 }
-footer .jumbotron .card .card-title {
+.jumbotron .card .card-title {
   text-align: center;
   font-size: 41.4px;
 }
-footer .jumbotron .card .card-text {
+.jumbotron .card .card-text {
   font-size: 18px;
 }
-footer .jumbotron .card .card-content {
+.jumbotron .card .card-content {
   margin-top: 40px;
 }
-footer .jumbotron .card .card-content p {
+.jumbotron .card .card-content p {
   margin: auto;
 }
-footer .jumbotron .card .card-content img {
+.jumbotron .card .card-content img {
   height: 100px;
 }
 
@@ -217,6 +217,19 @@ ul {
 .main-resto .card .card-header {
   text-align: center;
 }
+.main-resto .google-maps {
+  position: relative;
+  padding-bottom: 120%;
+  height: 0;
+  overflow: hidden;
+}
+.main-resto .google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 90% !important;
+}
 .main-resto aside {
   padding: 40px;
 }
@@ -243,6 +256,18 @@ ul {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  header ul {
+    margin: auto;
+  }
+
+  .main-resto .card img {
+    height: 300px;
+  }
+}
 @media screen and (max-width: 576px) {
   header nav {
     padding-left: 0px;
@@ -256,9 +281,6 @@ ul {
     margin: auto;
     height: 30px;
     margin-left: 10px;
-  }
-  header nav ul {
-    margin: auto;
   }
   header .carousel .carousel-image {
     height: 600px;
@@ -282,18 +304,18 @@ ul {
     display: none;
   }
 
-  footer .jumbotron .card .card-content {
+  .jumbotron .card .card-content {
     text-align: center;
   }
-  footer .jumbotron .card .card-content img {
+  .jumbotron .card .card-content img {
     width: 50%;
     margin: auto;
   }
-  footer .jumbotron .card .card-title {
+  .jumbotron .card .card-title {
     text-align: center;
     font-size: 30.6px;
   }
-  footer .jumbotron .card .card-text {
+  .jumbotron .card .card-text {
     text-align: center;
   }
 
@@ -301,9 +323,6 @@ ul {
     margin-top: 20px;
   }
 
-  .main-resto aside {
-    padding: 0px 10px;
-  }
   .main-resto aside .card img {
     height: 300px;
   }
@@ -311,17 +330,10 @@ ul {
     font-size: 1.5em;
   }
   .main-resto aside .card .card-body ul li h4 {
-    font-size: 1.4em;
-  }
-  .main-resto aside .card .card-body ul li p {
     font-size: 1.2em;
   }
   .main-resto aside .card .header-content p {
     font-size: 1.2em;
-  }
-  .main-resto aside iframe {
-    width: 250px;
-    height: 250px;
   }
 
   .main-content h1 {
