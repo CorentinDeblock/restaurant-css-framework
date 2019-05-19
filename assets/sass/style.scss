@@ -5,8 +5,19 @@ $margin-c-h2: 10px;
     font-family: 'Raleway', sans-serif
 }
 header{
-    img{
-        height:900px;
+    .head-title{
+        img{
+            height:60px;
+        }
+        h1{
+            margin:auto;
+            margin-left:5%;
+        }
+    }
+    .carousel{
+        .carousel-image{
+            height:900px;
+        }
     }
     nav{
         position:fixed;
@@ -55,6 +66,7 @@ header{
         }
     }
 }
+
 .main-contact{
     background-color:#212121;
     color:white;
@@ -105,6 +117,8 @@ header{
             }
         }
     }
+}
+footer{
     .jumbotron{
         .card{
             .card-title{
@@ -118,6 +132,9 @@ header{
                 margin-top:40px;
                 p{
                     margin:auto;
+                }
+                img{
+                    height:100px;
                 }
             }
         }
@@ -177,6 +194,11 @@ ul{
             height:500px;
         }
         .card-body{
+            iframe{
+                margin-top:40px;
+                margin-left:50%;
+                transform: translateX(-50%);
+            }
             .header-content{
                 margin-top:10px;
                 h2{
@@ -198,11 +220,6 @@ ul{
                     }
                 }
             }
-            iframe{
-                margin-top:40px;
-                margin-left:50%;
-                transform: translateX(-50%);
-            }
         }
         .card-header{
             text-align: center;
@@ -217,10 +234,11 @@ ul{
 .photo-pagination{
     text-align: center;
     font-size:30px;
-    background-color:#e1e1e1;   
+    background-color:#e1e1e1; 
     .pagination{
         margin:0;
         padding-bottom:20px;
+        padding-top:40px;
     }
     img{
         margin-top:30px; 
@@ -230,44 +248,84 @@ ul{
         background-color:#313131;
         color:white;
     }
-    .pagination{
-        margin-top:30px;
+    .tab-content{
+        padding-bottom:30px;
     }
 }
 
-@media screen and (max-width:590px){
+//header link ofnt
+$font-mobile-a: 0.6em; 
+
+//carousel title
+$font-mobile-title-cont:0.8em;
+$font-mobile-title-cap:1.8em;
+//carousel cpation
+$font-mobile-caption:0.9em;
+$font-mobile-caption-h2:1.3em;
+
+@media screen and (max-width:576px){
     header{
         nav{
             padding-left:0px;
             padding-right:0px;
             a{
-                margin-left:13px;
-                font-size:0.8em;
+                margin-left:10px;
+                font-size:$font-mobile-a;
+            }
+            .head-title{
+                img{
+                    margin:auto;
+                    height: 30px;
+                    margin-left:10px;
+                }
+            }
+            ul{
+                margin:auto;
             }
         }
         .carousel{
-            img{
+            .carousel-image{
                 height:600px;
             }
             .carousel-title{
                 padding:10px;
                 .title-content{
-                    font-size:0.8em;
+                    font-size:$font-mobile-title-cont;
                 }
                 .title-caption{
-                    font-size:1.0em;
+                    font-size:$font-mobile-title-cap;
                 }
             }
             .carousel-caption{
-                font-size:0.9em;
+                font-size:$font-mobile-caption;
                 h2{
-                    font-size:1.3em;
+                    font-size:$font-mobile-caption-h2;
                 }
             }
         }
         h1{
             display:none;
         }  
+    }
+    footer{
+        .jumbotron{
+            .card{
+                .card-content{
+                    img{
+                        width:50%;
+                        margin:auto;
+                    }
+                    text-align: center;
+                }
+                .card-title{
+                    text-align: center;
+                    font-size:$font-desc * 1.7;
+                }
+                .card-text{
+                    text-align: center;
+                }
+            }
+        }
     }
     .row{
         div{

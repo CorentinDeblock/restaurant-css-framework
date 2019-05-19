@@ -2,7 +2,14 @@
   font-family: "Raleway", sans-serif;
 }
 
-header img {
+header .head-title img {
+  height: 60px;
+}
+header .head-title h1 {
+  margin: auto;
+  margin-left: 5%;
+}
+header .carousel .carousel-image {
   height: 900px;
 }
 header nav {
@@ -102,21 +109,25 @@ header .carousel-title .title-caption {
   padding: 0px;
   height: 200px;
 }
-.acceuil-main .jumbotron {
+
+footer .jumbotron {
   margin-bottom: 0px;
 }
-.acceuil-main .jumbotron .card .card-title {
+footer .jumbotron .card .card-title {
   text-align: center;
   font-size: 41.4px;
 }
-.acceuil-main .jumbotron .card .card-text {
+footer .jumbotron .card .card-text {
   font-size: 18px;
 }
-.acceuil-main .jumbotron .card .card-content {
+footer .jumbotron .card .card-content {
   margin-top: 40px;
 }
-.acceuil-main .jumbotron .card .card-content p {
+footer .jumbotron .card .card-content p {
   margin: auto;
+}
+footer .jumbotron .card .card-content img {
+  height: 100px;
 }
 
 .info-plat {
@@ -177,6 +188,11 @@ ul {
 .main-resto .card img {
   height: 500px;
 }
+.main-resto .card .card-body iframe {
+  margin-top: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 .main-resto .card .card-body .header-content {
   margin-top: 10px;
 }
@@ -198,11 +214,6 @@ ul {
 .main-resto .card .card-body .body-content li p {
   font-size: 22px;
 }
-.main-resto .card .card-body iframe {
-  margin-top: 40px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
 .main-resto .card .card-header {
   text-align: center;
 }
@@ -218,6 +229,7 @@ ul {
 .photo-pagination .pagination {
   margin: 0;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 .photo-pagination img {
   margin-top: 30px;
@@ -227,20 +239,28 @@ ul {
   background-color: #313131;
   color: white;
 }
-.photo-pagination .pagination {
-  margin-top: 30px;
+.photo-pagination .tab-content {
+  padding-bottom: 30px;
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 576px) {
   header nav {
     padding-left: 0px;
     padding-right: 0px;
   }
   header nav a {
-    margin-left: 13px;
-    font-size: 0.8em;
+    margin-left: 10px;
+    font-size: 0.6em;
   }
-  header .carousel img {
+  header nav .head-title img {
+    margin: auto;
+    height: 30px;
+    margin-left: 10px;
+  }
+  header nav ul {
+    margin: auto;
+  }
+  header .carousel .carousel-image {
     height: 600px;
   }
   header .carousel .carousel-title {
@@ -250,7 +270,7 @@ ul {
     font-size: 0.8em;
   }
   header .carousel .carousel-title .title-caption {
-    font-size: 1em;
+    font-size: 1.8em;
   }
   header .carousel .carousel-caption {
     font-size: 0.9em;
@@ -260,6 +280,21 @@ ul {
   }
   header h1 {
     display: none;
+  }
+
+  footer .jumbotron .card .card-content {
+    text-align: center;
+  }
+  footer .jumbotron .card .card-content img {
+    width: 50%;
+    margin: auto;
+  }
+  footer .jumbotron .card .card-title {
+    text-align: center;
+    font-size: 30.6px;
+  }
+  footer .jumbotron .card .card-text {
+    text-align: center;
   }
 
   .row div {
