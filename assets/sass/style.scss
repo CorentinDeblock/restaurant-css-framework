@@ -31,6 +31,7 @@ header{
     ul{
         list-style-type: none;
         display:flex;
+        margin-top:auto;
         font-size:20px;
         a{
             text-decoration: none;
@@ -115,6 +116,9 @@ header{
                 padding:0px;
                 height:200px;
             }
+            h2{
+                font-weight: bolder;
+            }
         }
     }
 }
@@ -186,7 +190,14 @@ ul{
 }
 .main-resto{
     background-color: #f9f9f9;
+    .tab-content{
+        margin-top:40px;
+    }
+    .tab-pane{
+        margin:0;
+    }
     .card{
+        margin:0;
         box-shadow: 0px 0px 20px 0px #a1a1a1a1;
         img{
             height:500px;
@@ -196,27 +207,30 @@ ul{
                 margin-top:40px;
                 margin-left:50%;
                 transform: translateX(-50%);
+                
             }
             .header-content{
                 margin-top:10px;
-                h2{
-                    margin-bottom:$margin-c-h2;
-                }
                 p{
                     font-size:20px;
                 }
             }
             .body-content{
                 margin-top:40px;
-                h2{
-                    margin-bottom:$margin-c-h2;
-                }
                 li{
                     margin-top:20px;
                     p{
                         font-size:22px;
                     }
                 }
+            }
+            h3{
+                margin-bottom:$margin-c-h2;
+                font-size:38px;
+                font-weight: 800;
+            }
+            h4{
+                font-weight: 600;
             }
         }
         .card-header{
@@ -225,7 +239,7 @@ ul{
     }
     .google-maps{
         position:relative;
-        padding-bottom:120%;
+        padding-bottom:60%;
         height:0;
         overflow: hidden;
     }
@@ -277,9 +291,6 @@ $font-mobile-caption-h2:1.3em;
         h1{
             font-size:2.0em;
         }
-        ul{
-            margin:auto;
-        }
     }
     .main-resto{
         .card{
@@ -305,6 +316,9 @@ $font-mobile-caption-h2:1.3em;
                     height: 30px;
                     margin-left:10px;
                 }
+            }
+            ul{
+                margin:auto;
             }
         }
         .carousel{
@@ -335,7 +349,7 @@ $font-mobile-caption-h2:1.3em;
         .card{
             .card-content{
                 img{
-                    width:50%;
+                    width:40%;
                     margin:auto;
                 }
                 text-align: center;
@@ -369,10 +383,13 @@ $font-mobile-caption-h2:1.3em;
                             h4{
                                 font-size:1.2em;
                             }
-                            p{
-                                
-                            }
                         }
+                    }
+                    h3{
+                        font-size:30px;
+                    }
+                    h4{
+                        font-size:25px;
                     }
                 }
                 .header-content {
@@ -382,9 +399,12 @@ $font-mobile-caption-h2:1.3em;
                 }
             }
         }
+        .google-maps{
+            padding-bottom:120%;
+        }
     }
     .main-content{
-        h1{
+        h2{
             font-size:1.2em;
             font-weight: bolder;
         }
