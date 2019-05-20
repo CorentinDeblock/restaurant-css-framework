@@ -70,98 +70,135 @@
         </div>
     </header>
     <main class="main-carte">
-        <ul class="all-card">
-            <div class="container-fluid">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#Sashimi" data-toggle="tab" class="nav-link active" aria-controls="Sashimi" aria-selected="true" role="tab">Sashimi</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Sushi" data-toggle="tab" class="nav-link" aria-controls="Sushi" aria-selected="false" role="tab">Sushi</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Noodle" data-toggle="tab" aria-controls="Noodle" aria-selected="false" class="nav-link" role="tab">Noodle</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Riz" class="nav-link" data-toggle="tab" aria-controls="Riz" aria-selected="false">Riz</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Salade" class="nav-link" data-toggle="tab" aria-controls="Salade" aria-selected="false">Salade</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class='tab-pane fade active show' id="Sashimi" role="tabpanel" aria-labelledby="Sashimi-tab">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <li class="top-space row">
-                            <div  class="col-xl-4 col-lg-11">
-                                <img src="assets/image/sashimi.jpg" alt="sashimi">
-                            </div>
-                            <div class="col-xl-6 col-lg-11">
-                                <h1>Sashimi</h1>
-                                <ul class="info-plat">
-                                    <li>Plat conseiller a : toute la famille</li>
-                                    <li>Temps de préparation : 5 minute</li>
-                                    <li>Pour : 1 personnes</li>
-                                    <li>A emporté : non</li>
-                                    <li>Prix : <span class="badge badge-secondary">7.99€</span></li>
-                                </ul>
-                            </div>
-                            <div class="center">
-                                <p>
-                                    Plats traditionnelle de sashimi, il peut être accompagner de sushi ou d'autre chose.
-                                    Le sashimi est frais et couper sur place, il ne peut pas être emporter.
-                                </p>
-                            </div>
-                        </li>
+                    <div  class="col-xl-4 col-lg-11">
+                        <img src="assets/image/sashimi.jpg" alt="sashimi">
                     </div>
-                    <div class="col-lg-6">
-                        <li class="top-space row">
-                            <div class="col-lg-11 col-xl-4">
-                                <img src="assets/image/sushi.jpg" alt="sushi">
-                            </div>
-                            <div class="col-lg-11 col-xl-6">
-                                <h1>Sushi</h1>
-                                <ul class="info-plat">
-                                    <li>Plat conseiller a : toute la famille</li>
-                                    <li>Temps de préparation : 5 minute</li>
-                                    <li>Pour : 3 personnes</li>
-                                    <li>A emporté : oui</li>
-                                    <li>Prix : <span class="badge badge-secondary">4.99€</span></li>
-                                </ul>
-                            </div>
-                            <div class="center">
-                                <p>Le fameux sushi, le plât le plus connu de tout les plât japonais. Il est manger avec des baguettes obligatoirement.</p>
-                            </div>
-                        </li>
+                    <div class="col-xl-6 col-lg-11">
+                        <h1>Sashimi</h1>
+                        <ul class="info-plat">
+                            <li>Plat conseiller a : toute la famille</li>
+                            <li>Temps de préparation : 5 minute</li>
+                            <li>Pour : 1 personnes</li>
+                            <li>A emporté : non</li>
+                            <li>Prix : <span class="badge badge-secondary">7.99€</span></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-6">
-                        <li class="top-space row">
-                            <div class="col-xl-4 col-lg-11">
-                                <img src="assets/image/noodle.jpg" alt="noodle">
-                            </div>
-                            <div class="col-xl-6 col-lg-11">
-                                <h1>Noodle</h1>
-                                <ul class="info-plat">
-                                    <li>Plat conseiller a : toute la famille</li>
-                                    <li>Temps de préparation : 10 minute</li>
-                                    <li>Pour : 2 personnes</li>
-                                    <li>A emporté : oui</li>
-                                    <li>Prix : <span class="badge badge-secondary">6.99€</span></li>
-                                </ul>
-                            </div>
-                            <div class="center">
-                                <p>Noodle tout ce qui a de plus classique, mais les VRAI noodle pas les bon marcher</p>
-                            </div>
-                        </li>
-                    </div>
-                    <div class="col-lg-6">
-                        <li class="top-space row">
-                            <div class="col-xl-4 col-lg-11">
-                                <img src="assets/image/rice.jpg" alt="rice">
-                            </div>
-                            <div class="col-xl-6 col-lg-11">
-                                <h1>Riz cantonnais</h1>
-                                <ul class="info-plat">
-                                    <li>Plat conseiller a : toute la famille</li>
-                                    <li>Temps de préparation : 20 minute</li>
-                                    <li>Pour : 1 personnes</li>
-                                    <li>A emporté : non</li>
-                                    <li>Prix : <span class="badge badge-secondary">3.99€</span></li>
-                                </ul>
-                            </div>
-                            <div class="center">
-                                <p>
-                                    Plat de riz cantonnais, pas une spécialité japonaise mais un très bon plât chinois que on a décidé d'intégrer.
-                                </p>
-                            </div>
-                        </li>
+                    <div class="center">
+                        <p>
+                            Plats traditionnelle de sashimi, il peut être accompagner de sushi ou d'autre chose.
+                            Le sashimi est frais et couper sur place, il ne peut pas être emporter.
+                        </p>
                     </div>
                 </div>
             </div>
-        </ul>
-
+            <div class='tab-pane fade' id="Sushi" role="tabpanel" aria-labelledby="Sashimi-tab">
+                <div class="row">
+                    <div  class="col-xl-4 col-lg-11">
+                        <img src="assets/image/sushi.jpg" alt="sushi">
+                    </div>
+                    <div class="col-xl-6 col-lg-11">
+                        <h1>Sushi</h1>
+                        <ul class="info-plat">
+                            <li>Plat conseiller a : toute la famille</li>
+                            <li>Temps de préparation : 10 minute</li>
+                            <li>Pour : 4 personnes</li>
+                            <li>A emporté : oui</li>
+                            <li>Prix : <span class="badge badge-secondary">3.99€</span></li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <p>
+                            Plats traditionnelle de sashimi, il peut être accompagner de sushi ou d'autre chose.
+                            Le sashimi est frais et couper sur place, il ne peut pas être emporter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='tab-pane fade' id="Noodle" role="tabpanel" aria-labelledby="Sashimi-tab">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-11">
+                        <img src="assets/image/noodle.jpg" alt="noodle">
+                    </div>
+                    <div class="col-xl-6 col-lg-11">
+                        <h1>Noodle</h1>
+                        <ul class="info-plat">
+                            <li>Plat conseiller a : toute la famille</li>
+                            <li>Temps de préparation : 10 minute</li>
+                            <li>Pour : 2 personnes</li>
+                            <li>A emporté : oui</li>
+                            <li>Prix : <span class="badge badge-secondary">6.99€</span></li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <p>Noodle tout ce qui a de plus classique, mais les VRAI noodle pas les bon marcher</p>
+                    </div>
+                </div>
+            </div>
+            <div class='tab-pane fade' id="Riz" role="tabpanel" aria-labelledby="Sashimi-tab">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-11">
+                        <img src="assets/image/rice.jpg" alt="rice">
+                    </div>
+                    <div class="col-xl-6 col-lg-11">
+                        <h1>Riz cantonnais</h1>
+                        <ul class="info-plat">
+                            <li>Plat conseiller a : toute la famille</li>
+                            <li>Temps de préparation : 20 minute</li>
+                            <li>Pour : 1 personnes</li>
+                            <li>A emporté : non</li>
+                            <li>Prix : <span class="badge badge-secondary">3.99€</span></li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <p>
+                            Plat de riz cantonnais, pas une spécialité japonaise mais un très bon plât chinois que on a décidé d'intégrer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='tab-pane fade' id="Salade" role="tabpanel" aria-labelledby="Salade-tab">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-11">
+                        <img src="assets/image/japan-salad.jpg" alt="rice">
+                    </div>
+                    <div class="col-xl-6 col-lg-11">
+                        <h1>Salade de chou japonais</h1>
+                        <ul class="info-plat">
+                            <li>Plat conseiller a : toute la famille</li>
+                            <li>Temps de préparation : 40 minute</li>
+                            <li>Pour : 8 personnes</li>
+                            <li>A emporté : non</li>
+                            <li>Prix : <span class="badge badge-secondary">8.99€</span></li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <p>
+                            Plat de riz cantonnais, pas une spécialité japonaise mais un très bon plât chinois que on a décidé d'intégrer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
