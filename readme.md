@@ -19,7 +19,7 @@ L'acceuil est constituer d'une rubrique news dont le jumbotron et aussi un conte
 
 - News
 
-![News](assets/image/gitPhoto/news/png)
+![News](assets/image/gitPhoto/news.png)
 
 Les news présente ce qu'il y a de nouveau mais aussi quelque évènement, fait avec les card de bootstrap. Aucun card-header utiliser
 
@@ -37,7 +37,7 @@ Presente la carte du resto très brièvement, la carte est constituer de 4 plât
 
 ### Photo
 
-![Photo](assets/image/gitPhoto/menu.png)
+![Photo](assets/image/gitPhoto/Photo.png)
 
 Presente quelque photo de la gallerie, les photo viennent de Unsplash, j'ai utiliser une pagination pour les chiffres et un nav-tabs pour le contenu
 
