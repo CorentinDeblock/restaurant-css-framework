@@ -272,9 +272,6 @@ ul {
 .photo-pagination .tab-content {
   padding-bottom: 30px;
 }
-.photo-pagination #p4 img {
-  width: 18%;
-}
 
 @media screen and (max-width: 768px) {
   header h1 {
@@ -375,6 +372,16 @@ ul {
 
   .main-carte .row {
     width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #p4 img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #p4 img {
+    width: 18%;
   }
 }
 @media screen and (max-width: 1750px) {
