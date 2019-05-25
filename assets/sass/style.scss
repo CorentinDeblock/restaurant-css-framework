@@ -279,6 +279,11 @@ ul{
     .tab-content{
         padding-bottom:30px;
     }
+    #p4{
+        img{
+            width:340px;
+        }
+    }
 }
 
 //header link ofnt
@@ -422,20 +427,7 @@ $font-mobile-caption-h2:1.3em;
         }
     }
 }
-@media screen and (max-width:992px){
-    #p4{
-        img{
-            width:100%;
-        }
-    }
-}
-@media screen and (min-width:992px){
-    #p4{
-        img{
-            width:18%;
-        }
-    }
-}
+
 @media screen and (max-width:1750px) {
     .main-content{
         .panel{
