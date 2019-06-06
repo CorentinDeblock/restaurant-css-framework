@@ -160,10 +160,6 @@ header{
     background-color:#e8e8e8;
     .top-space{
         margin:20px;
-        .center{
-            text-align: center;
-            font-size:20px;
-        }
     }
     padding:0;
     .row{
@@ -184,6 +180,9 @@ header{
         }
         h1{
             text-align: center;
+        }
+        .desc{
+            font-size:23px;
         }
         display:flex;
     }
@@ -270,7 +269,7 @@ ul{
     }
     img{
         margin-top:30px; 
-        height:500px;
+        height:450px;
     }
     a{
         background-color:#313131;
@@ -278,11 +277,6 @@ ul{
     }
     .tab-content{
         padding-bottom:30px;
-    }
-    #p4{
-        img{
-            width:340px;
-        }
     }
 }
 
@@ -305,6 +299,13 @@ $font-mobile-caption-h2:1.3em;
         .card{
             img{
                 height:300px;
+            }
+        }
+    }
+    .main-carte{
+        .row{
+            .desc{
+                font-size:18px;
             }
         }
     }
@@ -332,16 +333,10 @@ $font-mobile-caption-h2:1.3em;
         }
         .carousel{
             .carousel-image{
-                height:600px;
+                height:400px;
             }
-            .carousel-title{
-                padding:10px;
-                .title-content{
-                    font-size:$font-mobile-title-cont;
-                }
-                .title-caption{
-                    font-size:$font-mobile-title-cap;
-                }
+            .carousel-title{    
+                display: none;
             }
             .carousel-caption{
                 font-size:$font-mobile-caption;
